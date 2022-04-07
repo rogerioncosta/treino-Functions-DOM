@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<title>Treino JS</title>
+	
+</head>
+<body>
+
+	<header>
+		<h3>$finanças de gastos</h3>
+	</header>
+
+	<div class="cx-form">
+
+		<div id="cx-dentro-form">
+			
+
+			<form> <!--Form==================-->
+				<h3>Cadastrar valor da depesa</h3>
+
+				<!--inputs ===========================-->
+				<div class="inputs">					
+					<input 
+						type="text" 
+						name="descricao"
+						placeholder="Descrição"
+						>
+				</div>
+
+				<div class="inputs">					
+					<input 
+						type="number" 
+						name="valor"
+						step="0.01" 
+						placeholder="0,00"
+						>
+				</div> <!--inputs ===========================-->
+
+				<!--botões ===========================-->
+				<div class="botoes">
+					<a href="#" class="botao-cancelar">
+						Cancelar	
+					</a>
+
+					<button>Salvar</button>
+				</div>
+
+
+			</form> <!--Form==================-->
+		</div>
+
+	</div>
+
+	<div id="separacao">
+	</div>
+
+	<main class="container">
+
+		<section id="balanço">
+			<h3>Balanço</h3>
+
+			<div class="cartao">
+				<h3>Valor total das despesas</h3>
+				<p id="mostraValor">R$ 500,00</p>
+			</div>
+
+		</section>
+
+		<section id="tabelaValores">
+			<table id="tabela">
+				<thead>
+					<tr>
+						<th>Descrição</th>
+						<th>Valor</th>
+					</tr>
+				</thead>
+				<tbody>
+				<!-- 	<tr>
+						<td class="descricao">Luz</td>
+						<td class="sinalMais">500,00</td>
+					</tr>	
+					<tr>
+						<td class="descricao">Água</td>
+						<td class="sinalMenos">-100,00</td>
+					</tr> -->
+				</tbody>
+			</table>
+		</section>
+	</main>
+
+	
+
+
+	<footer>
+			<p>$finanças de gastos</p>		
+	</footer>
+
+
+	<script src="./scripts.js"></script>
+
+</body>
+</html>

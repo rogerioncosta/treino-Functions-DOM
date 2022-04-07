@@ -1,0 +1,215 @@
+		body {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			background: rgb(215, 215, 215);
+			font-family: sans-serif;
+		}
+
+		header {
+			background: rgb(13,72,75);
+			padding: 1px;
+			/*display: block;*/
+			align-items: center;
+			text-align: center;
+			/*height: 40px;*/
+		}
+
+		header h3 {
+			text-align: center;
+			color: white;
+			font-weight: normal;
+			/*margin-top: 5px;*/
+		}
+
+
+		.cx-form {
+			/*border: 1px solid black;*/
+			width: min(90vw, 500px);
+			text-align: center;
+			margin: 0 auto;
+			margin-top: 30px;
+		}
+
+
+		#cx-dentro-form {
+			/*border: 1px solid red;*/
+			width: 80%;			
+			margin: 0 auto;
+		}
+
+		#cx-dentro-form h3{
+			text-align: left;
+			color: gray;
+			margin-bottom: 5px;
+			font-weight: normal;
+
+		}
+		
+		form {
+			/*border: 1px solid black;*/
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		.inputs input{
+			margin-bottom: 10px;
+			padding: 10px;
+			border: none;
+			border-radius: 4px;
+			width: 94%;
+
+		}
+
+		button {
+		    width: 100%;
+		    height: 30px;
+		    border: none;
+		    color: white;
+		    background: rgb(13,72,75);
+		    padding: 0;
+		    border-radius: 0.25rem;
+		    cursor: pointer;
+		}
+
+		a {		    
+		    height: 30px;
+		    border: none;
+		    color: red;
+		    font-size: 14px;
+		    background: rgb(201, 201, 201);
+		    border-radius: 0.25rem;
+		    padding: 0;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    border-radius: 0.25rem;
+		    cursor: pointer;
+		}
+
+		/*a {
+		    color: red;
+		    border: 2px red solid;
+		    border-radius: 0.25rem;
+		    height: 30px;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    opacity: 0.6;
+		}*/
+
+		.botoes {
+			/*border: 1px solid black;*/
+		    display: flex;
+		    justify-content: space-between;
+		    align-items: center;
+		}
+
+		.botao-cancelar,
+		button {
+			/*width: 30%;*/
+			width: 80px;
+			/*border: 1px solid black;*/
+		}
+
+
+		a {
+    		text-decoration: none;
+    		margin-right: 5px;
+		}
+
+		#separacao {
+			background-color: rgb(203, 203, 203);
+			display: flex;
+			margin-top: 15px;
+			width: 95%;
+			height: 3px;
+			margin: 0 auto;
+			margin-top: 30px;
+			text-align: center;
+			border-radius: 5px;
+		}
+
+
+		section {
+			margin-top: 20px;
+		}
+
+		section h3 {
+			color: gray;
+			font-weight: normal;
+			margin-top: 30px;
+			margin-bottom: 5px;
+		}
+
+		.container {
+			/*width: 500px;*/
+			width: min(90vw, 500px);
+			/*height: min(90vw, 496px);*/
+			/*min-height: 83vh; */
+			/*display:flex; */
+			/*flex-direction:column; */
+
+			/*margin-top: 50px;*/
+			margin:0 auto;
+			/*border: 1px solid black;*/
+
+		}
+
+		.cartao {
+			background-color: white;
+			padding: 15px;			
+			margin-bottom: 20px;
+			border-radius: 4px;
+			/*border: 1px solid black;*/
+		}
+
+		.cartao > h3 {
+			font-size: 16px;
+			font-weight: bold;
+			/*border: 1px solid black;*/
+			margin-bottom: -20px;
+
+		}
+
+		#mostraValor {
+			font-size: 30px;
+			/*border: 1px solid black;*/
+
+		}
+
+		#table {
+			background: white;
+
+		}
+
+		table th, td {
+			background: white;
+			height: 20px;
+			width: 100%;
+			text-align: center;
+			border-radius: 4px;
+			padding: 4px;
+		}
+
+		#tabela {
+			margin-top: -10px;
+			/*border: 1px solid black;*/
+		}
+	
+
+		footer {
+			background-color: rgb(203, 203, 203);
+			/*border: 1px solid black;*/
+			margin-top: 50px;
+			padding: 1px;
+			/*display: block;*/
+			align-items: center;
+			text-align: center;
+		}
+
+		footer p {
+			text-align: center;
+			/*margin-top: 10px;*/
+			/*border: 1px solid red;*/
+		}
