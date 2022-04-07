@@ -1,6 +1,6 @@
 # treino-Functions-DOM
 Projeto simples para pratica de programação.
-Exibe na tabela e no cartão os valores de objeto do Js, manipulando a DOM para exibição.
+Exibe na tabela e no cartão de balanço os valores de objeto do Js, manipulando a DOM para exibição.
 
 Ainda incompleto...
 
