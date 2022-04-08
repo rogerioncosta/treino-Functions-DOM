@@ -1,8 +1,10 @@
 
-const transacao = { //===========================================
+const cartao = { //===========================================
 	gastos() {
 
 		let valorNoCartao = 0
+
+		let p = document.getElementById('mostraValor')
 
 		// pegar todas as transações
         // para cada transação,
@@ -10,26 +12,44 @@ const transacao = { //===========================================
 
 			// se ela for maior que zero
 			if (valoresNaTabela.valor > 0) {
-
+				
 				// somar a variavel e retornar ela
 				valorNoCartao = valorNoCartao + valoresNaTabela.valor
+				
+				// p.className = 'sinalMais'
 
-			}// if
+			} else if (valoresNaTabela.valor < 0) {
+
+				valorNoCartao = valorNoCartao + valoresNaTabela.valor				
+
+			}		 
+			
 
 		})// foreach
 
+		console.log("valor atual do cartão " + valorNoCartao)
+
+		if (valorNoCartao < 0) {
+					p.className = 'sinalMenos'
+			} else {
+				p.className = 'sinalMais'
+			}
+
 		return valorNoCartao
+		
 
-	}// func gastos
+	},// func gastos ==========================================
 
-}// obj transacao ==================================================
+
+
+}// obj cartao ==================================================
 
 
 const valoresNaTabela = [ //=======================================
 	{
 		id: 1,
-		descricao: 'Luz',
-		valor: 500.51,
+		descricao: 'Salário',
+		valor: 5000,
 	},//obj 1
 
 	{
@@ -41,8 +61,20 @@ const valoresNaTabela = [ //=======================================
 	{
 		id: 3,
 		descricao: 'Gás',
-		valor: 150,
-	}// obj 2
+		valor: -150,
+	},// obj 3
+
+	{
+		id: 4,
+		descricao: 'Financiamento',
+		valor: -2000,
+	},// obj 4
+
+	{
+		id: 5,
+		descricao: 'Luz',
+		valor: -300,
+	}// obj 5
 
 ] // Array de objs valoresNaTabela ==================================
 
@@ -70,7 +102,7 @@ const DOM = { // =============================================
 		tr.innerHTML = DOM.criarTds(valoresNaTabela)
 
 
-		console.log(tr) //console apagar
+		// console.log(tr) //console apagar
 
 
 		// Adiciona o tr dentro de #tabela no tbody. Child é o tr
@@ -102,7 +134,14 @@ const DOM = { // =============================================
 		// Cria os tds e retorna para fora
 		return html
 	
-	} // func criarTds ==========================
+	}, // func criarTds ===============================================
+
+
+	atualizarValorCartao() {
+		document
+			.getElementById('mostraValor')
+			.innerHTML = cartao.gastos()
+	}
 
 
 }// DOM=============================================
@@ -111,3 +150,5 @@ const DOM = { // =============================================
 valoresNaTabela.forEach(function(valoresNaTabela) {
 	DOM.adicionarValoresTabela(valoresNaTabela)
 })
+
+DOM.atualizarValorCartao()
