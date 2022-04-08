@@ -4,6 +4,6 @@ Exibe na tabela e no cartão de balanço os valores de objeto do Js, manipulando
 
 Ainda incompleto...
 
-![image](https://user-images.githubusercontent.com/60291930/162506096-4d265193-264c-4b85-8d97-b7509d8dd360.png)
+![index](https://user-images.githubusercontent.com/60291930/162506901-05196068-9dc6-4687-870a-337dcf09106c.jpg)
 
 
