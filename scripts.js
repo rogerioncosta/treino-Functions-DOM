@@ -30,9 +30,9 @@ const cartao = { //===========================================
 		console.log("valor atual do cartão " + valorNoCartao)
 
 		if (valorNoCartao < 0) {
-					p.className = 'sinalMenos'
+					p.className = 'negativo'
 			} else {
-				p.className = 'sinalMais'
+				p.className = 'positivo'
 			}
 
 		return valorNoCartao

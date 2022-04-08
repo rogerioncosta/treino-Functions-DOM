@@ -199,11 +199,11 @@
 			/*border: 1px solid black;*/
 		}
 	
-		.sinalMais {
+		.positivo {
 			color: green;
 		}
 
-		.sinalMenos {
+		.negativo {
 			color: red;
 		}
 
