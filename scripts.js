@@ -74,7 +74,8 @@ const valoresNaTabela = [ //=======================================
 		id: 5,
 		descricao: 'Luz',
 		valor: -300,
-	}// obj 5
+	},// obj 5
+
 
 ] // Array de objs valoresNaTabela ==================================
 
@@ -123,7 +124,8 @@ const DOM = { // =============================================
 	criarTds(valoresNaTabela) {//==========================================
 
 		// mostra se colocou o - na frente do valor ao cadastrar
-		const CSSclasse = valoresNaTabela.valor > 0 ? "sinalMais" : "sinalMenos"
+		const CSSclasse = valoresNaTabela.valor > 0 ? "positivo" : "negativo"
+		console.log(valoresNaTabela.valor)
 
 		const html = 
 		`

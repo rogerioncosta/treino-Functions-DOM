@@ -1,9 +1,25 @@
+		/*html, body {
+			height: 100%;
+			margin: 0px;
+			padding: 0px;
+		}*/
+
 		body {
 			margin: 0;
 			padding: 0;
 			box-sizing: border-box;
 			background: rgb(215, 215, 215);
 			font-family: sans-serif;
+
+			/*display: flex;*/
+			/*flex-direction: column;*/
+		}
+
+		.container {			
+			min-height: 99.7vh; 			
+			display: flex;
+			flex-direction: column;
+			/*border: 1px solid red;*/
 		}
 
 		header {
@@ -122,7 +138,7 @@
 			background-color: rgb(203, 203, 203);
 			display: flex;
 			margin-top: 15px;
-			width: 95%;
+			width: 500px;
 			height: 3px;
 			margin: 0 auto;
 			margin-top: 30px;
@@ -140,20 +156,13 @@
 			font-weight: normal;
 			margin-top: 30px;
 			margin-bottom: 5px;
-		}
+		}		
 
-		.container {
+		.main {
 			/*width: 500px;*/
 			width: min(90vw, 500px);
-			/*height: min(90vw, 496px);*/
-			/*min-height: 83vh; */
-			/*display:flex; */
-			/*flex-direction:column; */
-
-			/*margin-top: 50px;*/
 			margin:0 auto;
 			/*border: 1px solid black;*/
-
 		}
 
 		.cartao {
@@ -180,8 +189,8 @@
 		table {
 			/*border: 1px solid black;*/
 			/*background: white;*/
-			width: 100%;
-			
+			width: 100%;	
+			margin-bottom: 50px;	
 
 		}
 
@@ -192,11 +201,7 @@
 			text-align: center;
 			border-radius: 4px;
 			padding: 4px;
-		}
 
-		#tabela {
-			margin-top: -10px;
-			/*border: 1px solid black;*/
 		}
 	
 		.positivo {
@@ -207,10 +212,14 @@
 			color: red;
 		}
 
+
 		footer {
 			background-color: rgb(203, 203, 203);
 			/*border: 1px solid black;*/
-			margin-top: 50px;
+			/*margin-top: 50px;*/
+			margin-top: auto;
+			/*flex-shrink: 0;*/
+			/*position: fixed;*/
 			padding: 1px;
 			/*display: block;*/
 			align-items: center;

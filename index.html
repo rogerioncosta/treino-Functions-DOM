@@ -9,95 +9,98 @@
 </head>
 <body>
 
-	<header>
-		<h3>$finanças de gastos</h3>
-	</header>
+	<div class="container">
 
-	<div class="cx-form">
-
-		<div id="cx-dentro-form">
-			
-
-			<form> <!--Form==================-->
-				<h3>Cadastrar valor da depesa</h3>
-
-				<!--inputs ===========================-->
-				<div class="inputs">					
-					<input 
-						type="text" 
-						name="descricao"
-						placeholder="Descrição"
-						>
-				</div>
-
-				<div class="inputs">					
-					<input 
-						type="number" 
-						name="valor"
-						step="0.01" 
-						placeholder="0,00"
-						>
-				</div> <!--inputs ===========================-->
-
-				<!--botões ===========================-->
-				<div class="botoes">
-					<a href="#" class="botao-cancelar">
-						Cancelar	
-					</a>
-
-					<button>Salvar</button>
-				</div>
+		<header>
+			<h3>$finanças de gastos</h3>
+		</header>
 
 
-			</form> <!--Form==================-->
-		</div>
+		<div class="cx-form">
 
-	</div>
+			<div id="cx-dentro-form">
+				
 
-	<div id="separacao">
-	</div>
+				<form> <!--Form==================-->
+					<h3>Cadastrar valor da depesa</h3>
 
-	<main class="container">
+					<!--inputs ===========================-->
+					<div class="inputs">					
+						<input 
+							type="text" 
+							name="descricao"
+							placeholder="Descrição"
+							>
+					</div>
 
-		<section id="balanço">
-			<h3>Balanço</h3>
+					<div class="inputs">					
+						<input 
+							type="number" 
+							name="valor"
+							step="0.01" 
+							placeholder="0,00"
+							>
+					</div> <!--inputs ===========================-->
 
-			<div class="cartao">
-				<h3>Valor do Saldo</h3>
-				<p id="mostraValor" class="corValor">R$ 500,00</p>
+					<!--botões ===========================-->
+					<div class="botoes">
+						<a href="#" class="botao-cancelar">
+							Cancelar	
+						</a>
+
+						<button>Salvar</button>
+					</div>
+
+
+				</form> <!--Form==================-->
 			</div>
 
-		</section>
+		</div>
 
-		<section id="tabelaValores">
-			<table id="tabela">
-				<thead>
-					<tr>
-						<th>Descrição</th>
-						<th>Valor</th>
-					</tr>
-				</thead>
-				<tbody>
-				<!-- 	<tr>
-						<td class="descricao">Luz</td>
-						<td class="positivo">500,00</td>
-					</tr>	
-					<tr>
-						<td class="descricao">Água</td>
-						<td class="negativo">-100,00</td>
-					</tr> -->
-				</tbody>
-			</table>
-		</section>
-	</main>
+		<div id="separacao">
+		</div>
+		
 
-	
+		<main class="main">
 
+			<section id="balanço">
+				<h3>Balanço</h3>
 
-	<footer>
-			<p>$finanças de gastos</p>		
-	</footer>
+				<div class="cartao">
+					<h3>Valor do Saldo</h3>
+					<p id="mostraValor" class="corValor">R$ 500,00</p>
+				</div>
 
+			</section>
+
+			<section id="tabelaValores">
+				<table id="tabela">
+					<thead>
+						<tr>
+							<th>Descrição</th>
+							<th>Valor</th>
+						</tr>
+					</thead>
+					<tbody>
+					<!-- 	<tr>
+							<td class="descricao">Luz</td>
+							<td class="positivo">500,00</td>
+						</tr>	
+						<tr>
+							<td class="descricao">Água</td>
+							<td class="negativo">-100,00</td>
+						</tr> -->
+					</tbody>
+				</table>
+			</section>
+		</main>
+
+		
+		<footer>
+				<p>$finanças de gastos</p>		
+		</footer>
+
+	</div>
 
 	<script src="./scripts.js"></script>
 
